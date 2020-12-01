@@ -111,14 +111,14 @@ sr.reveal(` .about__data, .about__img,
             .app__data, .app__img,
             .contact__data, .contact__button,
             .footer__content`, {
-    interval: 150
+    interval: 200
 })
 
 
 /*==================== GSAP ANIMATION ====================*/
 const foodGSAP = gsap.timeline();
 foodGSAP
-    .from("header", {delay: .1, y: -16, opacity: 0, duration: 0.8, ease: "power3.inOut"})
+    .from("header", {delay: .1, opacity: 0, duration: 0.8, ease: "power3.inOut"})
     .from(".home__img", {x: 100, delay: .05, opacity: 0, ease: "power2.out"})
     .from([".home__title", ".home__subtitle", ".button-cta"], {
     delay: -.3,
